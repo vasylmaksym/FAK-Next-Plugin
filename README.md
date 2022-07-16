@@ -2,8 +2,8 @@
 
 ## Actions
 
-| $hook_name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  | $callback |                         description                         |
-| ----------- | --------- | ----------------------------------------------------------- |
+| $hook_name | $callback |                         description                         |
+| ---------- | --------- | ----------------------------------------------------------- |
 | `woocommerce_product_data_panels` | add_tab_fields | - |
 | `woocommerce_process_product_meta` | save_options | save selected mix and match or optional products to meta data |
 | `woocommerce_before_add_to_cart_button` | display_options_on_product_page | render product mix and match or optional products from backoffice (if exists) |
@@ -28,8 +28,8 @@
 | `woocommerce_checkout_update_order_review` | fak_oddt_woocommerce_checkout_update_order_review | just update WC session |
 | `woocommerce_checkout_update_order_meta` | woocommerce_checkout_update_order_meta_order_number | order number from backoffice |
 | `woocommerce_email_order_details` | woocommerce_email_order_details_order_number | show backoffice order number |
-| `woocommerce_order_status_pending_to_on-hold_notification` | set_fak_order_number | backoffice ON |
-| `woocommerce_order_status_pending_to_processing_notification` | set_fak_order_number | backoffice ON |
+| `woocommerce_order_status_pending_to_*` | set_fak_order_number | backoffice ON |
+<!-- | `woocommerce_order_status_pending_to_processing_notification` | set_fak_order_number | backoffice ON | -->
 | `woocommerce_email_order_details` | woocommerce_email_order_details_show_oddt_info | show order delivery date time in email |
 | `woocommerce_before_shop_loop` | oddt_render_filters_form | render order delivery date time filter form |
 | `woocommerce_no_products_found` | oddt_no_products_found | call woocommerce_before_shop_loop action |
