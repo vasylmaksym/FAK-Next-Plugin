@@ -4,7 +4,7 @@
 
 | $hook_name  | $callback | $priority | $accepted_args |                         description                         |
 | ----------- | --------- | --------- | -------------- | ----------------------------------------------------------- |
-| woocommerce_product_data_panels | add_tab_fields | - | - |  |
+| woocommerce_product_data_panels | add_tab_fields | - | - | - |
 | woocommerce_process_product_meta | save_options | - | - | save selected mix and match or optional products to meta data |
 | woocommerce_before_add_to_cart_button | display_options_on_product_page | - | - | render product mix and match or optional products from backoffice (if exists) |
 | woocommerce_add_to_cart_validation | validate_selected_options | 10 | 2 | validate selected options (mix and match / optional) |
@@ -54,3 +54,17 @@
 | woocommerce_order_status_failed | action_order_status_cancelled | 10 | 1 | send order to strapi |
 | woocommerce_order_status_cancelled | action_order_status_cancelled | 10 | 1 | send order to strapi |
 | woocommerce_order_status_completed | action_order_status_completed | 10 | 1 | send order to strapi |
+
+## Filters
+
+| $hook_name  | $callback | $priority | $accepted_args |                         description                         |
+| ----------- | --------- | --------- | -------------- | ----------------------------------------------------------- |
+| woocommerce_product_data_tabs | add_product_tab | 99 | 1 | add new tab "custom options" |
+| woocommerce_get_item_data | display_selected_options_on_checkout | 10 | 2 | render selecte options on checkout page |
+| woocommerce_add_cart_item_data | fak_add_item_data | 10 | 3 | add value from comment form to cart item data |
+| woocommerce_get_item_data | fak_add_item_meta | 10 | 2 | display information as meta on cart page |
+| woocommerce_email_enabled_customer_new_account | check_if_need_send_email | 10 | 3 | not send email customers from backoffice after migration |
+| woocommerce_cart_item_quantity | wc_cart_item_quantity | 10 | 3 | set product quantity from product meta data |
+| woocommerce_get_price_html | fak_wc_price_per_piece | 100 | 2 | per piece text in price |
+| woocommerce_add_cart_item_data | cart_mix_and_match_item | 10 | 4 | split mix and match products in cart |
+| woocommerce_checkout_fields | woocommerce_checkout_fields_update | 9999 | - | just add class to billing fields |
