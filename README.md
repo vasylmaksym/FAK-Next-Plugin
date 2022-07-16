@@ -1,6 +1,5 @@
 # FAK-Next-Plugin
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| $hook_name  | $callback | $priority | $accepted_args |                         description                         |
+| ----------- | --------- | --------- | -------------- | ----------------------------------------------------------- |
+| 1           | 2         | 3         | 4              | 5                                                           |
