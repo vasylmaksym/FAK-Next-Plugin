@@ -2,7 +2,7 @@
 
 ## Actions
 
-| $hook_name  | $callback |       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                                      description                                         |
+| $hook_name  | $callback |                         <div style="width:500px">description</div>                              |
 | ----------- | --------- | ----------------------------------------------------------------------------------------------- |
 | `woocommerce_product_data_panels` | add_tab_fields | - |
 | `woocommerce_process_product_meta` | save_options | save selected mix and match or optional products to meta data |
